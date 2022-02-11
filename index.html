@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Translation UI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- styles of page  -->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" >
+        <!-- css style file and image -->
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="shortcut icon" href="https://weinguide.at/sites/wein/files/2018-06/admin.gif" type="image/x-icon">
+  
+    </head>
+<body id="body">
+
+    
+    
+    <!-- edit box initially==> hidden, visible on clicked on edit button  -->
+    <div id="edit-box">
+
+        <h2>Translation UI</h2>
+        
+        <!-- user profile image  -->
+        <img src="https://memoq-com.azureedge.net/wp-content/uploads/2019/07/textra.png" alt="Error">
+
+        <form id="form" action="">
+
+                <!-- input texts to modify the data  -->
+            <textarea name="sourcetext" id="sourcetext" cols="30" rows="5" placeholder="Enter Your text here to translate" required></textarea>
+            
+            <p>Select Target Language</p>
+
+            <select name="lang" id="lang" required>
+                <option value="mr">Marathi</option>
+                <option value="hi">Hindi</option>
+                <option value="ja">Japanese</option>
+                <option value="en">English</option>
+                <option value="bn">Bengali</option>
+                <option value="gu">Gujrati</option>
+                <option value="kn">Kannada</option>
+                <option value="ks">Kashmiri</option>
+            </select>
+
+            <!-- update button for update modified data  -->
+            <button id="translate" type="submit">Translate Text</button>
+
+        </form>
+        
+        <p id="sourceLang"></p>
+        <!-- input texts to modify the data  -->
+        <textarea name="targettext" id="targettext" cols="30" rows="5" placeholder="Translated text" required></textarea>
+
+
+    </div>
+
+    <img src="https://i.pinimg.com/originals/3d/6a/a9/3d6aa9082f3c9e285df9970dc7b762ac.gif" id="anim" alt="Loading">
+
+    <!-- js files  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="assets/index.js"></script>
+</body>
+</html>
